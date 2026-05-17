@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Călătorie în jurul omului</title>
+<style>
+:root{
+  --primary:#0f172a;
+  --secondary:#1e3a8a;
+  --accent:#3b82f6;
+  --bg:#eff6ff;
+}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:Segoe UI,Tahoma,Verdana,sans-serif;
+  background:linear-gradient(180deg,#eff6ff,#ffffff);
+  color:#111827;
+  line-height:1.8;
+}
+header{
+  background:linear-gradient(135deg,var(--primary),var(--secondary));
+  color:white;
+  padding:90px 20px 70px;
+  text-align:center;
+}
+header h1{font-size:3rem;margin-bottom:20px}
+header p{max-width:900px;margin:auto;font-size:1.15rem}
+nav{
+  position:sticky;top:0;z-index:1000;
+  background:rgba(255,255,255,.95);
+  backdrop-filter:blur(10px);
+  box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+nav ul{
+  list-style:none;margin:0;padding:12px;
+  display:flex;flex-wrap:wrap;justify-content:center;gap:10px;
+}
+nav a{
+  text-decoration:none;color:#0f172a;font-weight:600;
+  padding:8px 14px;border-radius:999px;
+}
+nav a:hover{background:#dbeafe}
+.container{width:min(1100px,calc(100% - 40px));margin:40px auto}
+section{
+  background:white;
+  padding:40px;
+  margin-bottom:30px;
+  border-radius:22px;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+h2{color:var(--secondary)}
+.hero-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:20px;
+  max-width:1100px;
+  margin:40px auto 0;
+  text-align:left;
+}
+.card{
+  background:#f8fafc;
+  border-left:5px solid var(--accent);
+  padding:20px;
+  border-radius:18px;
+}
+.card h3{margin:0 0 8px;color:#1e3a8a}
+.card p{margin:0;color:#111827;font-weight:500}
+.quote{
+  background:#eff6ff;
+  border-left:4px solid var(--accent);
+  padding:18px;border-radius:12px;
+  font-style:italic;
+}
+footer{
+  background:var(--primary);
+  color:white;
+  text-align:center;
+  padding:30px 20px;
+}
+@media(max-width:768px){
+  header h1{font-size:2.2rem}
+  section{padding:28px}
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>Călătorie în jurul omului</h1>
+  <p>Proiect transdisciplinar realizat conform cerințelor Liceului Teoretic Jean Monnet.</p>
+  <div class="hero-grid">
+    <div class="card"><h3>Fizică</h3><p>Corelații între organe umane și aparate de măsură.</p></div>
+    <div class="card"><h3>Chimie</h3><p>Transformările chimice ale substanțelor care pătrund în corpul uman.</p></div>
+    <div class="card"><h3>Istorie</h3><p>Renașterea și Umanismul.</p></div>
+    <div class="card"><h3>Geografie</h3><p>Adaptarea omului la mediul înconjurător.</p></div>
+    <div class="card"><h3>Filosofie</h3><p>Corpul uman în raționalismul lui Descartes și Spinoza.</p></div>
+    <div class="card"><h3>Religie</h3><p>Trupul ca templu al Duhului Sfânt.</p></div>
+    <div class="card"><h3>Informatică/TIC</h3><p>Transpunerea proiectului într-un website interactiv.</p></div>
+  </div>
+</header>
+
+<nav>
+<ul>
+<li><a href="#introducere">Introducere</a></li>
+<li><a href="#fizica">Fizică</a></li>
+<li><a href="#chimie">Chimie</a></li>
+<li><a href="#istorie">Istorie</a></li>
+<li><a href="#geografie">Geografie</a></li>
+<li><a href="#filosofie">Filosofie</a></li>
+<li><a href="#religie">Religie</a></li>
+<li><a href="#tic">Informatică/TIC</a></li>
+<li><a href="#concluzii">Concluzii</a></li>
+</ul>
+</nav>
+
+<div class="container">
+<section id="introducere">
+<h2>Introducere</h2>
+<p>Tema „Călătorie în jurul omului” analizează ființa umană din perspective științifice, istorice, geografice, filosofice și spirituale. Proiectul demonstrează că omul nu poate fi înțeles printr-o singură disciplină, ci doar printr-o abordare interdisciplinară.</p>
+</section>
+
+<section id="fizica"><h2>Fizică</h2><p>Corpul uman poate fi comparat cu un sistem complex de aparate și mecanisme: inima funcționează ca o pompă, plămânii respectă legile presiunii, iar ochiul este un sistem optic.</p></section>
+<section id="chimie"><h2>Chimie</h2><p>Organismul uman este un laborator chimic în care au loc permanent reacții esențiale pentru viață, precum digestia și respirația celulară.</p></section>
+<section id="istorie"><h2>Istorie</h2><p>Renașterea și Umanismul au pus omul în centrul universului cultural, accentuând valoarea rațiunii și a educației.</p></section>
+<section id="geografie"><h2>Geografie</h2><p>Omul s-a adaptat mediului înconjurător, iar în prezent încearcă să găsească un echilibru între dezvoltare și protejarea naturii.</p></section>
+<section id="filosofie"><h2>Filosofie</h2><p>Descartes și Spinoza au oferit perspective diferite asupra relației dintre corp și minte.</p><div class="quote">„Cogito, ergo sum.” – René Descartes</div></section>
+<section id="religie"><h2>Religie</h2><p>În tradiția creștină, trupul este considerat templul Duhului Sfânt, iar omul este privit ca ființă spirituală și morală.</p></section>
+<section id="tic"><h2>Informatică/TIC</h2><p>Website-ul reprezintă transpunerea digitală a proiectului și demonstrează utilizarea tehnologiei pentru organizarea și prezentarea informațiilor.</p></section>
+<section id="concluzii"><h2>Concluzii</h2><p>Omul este o ființă biologică, rațională, emoțională și spirituală. Complexitatea sa poate fi înțeleasă doar printr-o abordare interdisciplinară.</p></section>
+</div>
+
+<footer>
+  <p>Proiect realizat de Matei Matei</p>
+</footer>
+</body>
+</html>
